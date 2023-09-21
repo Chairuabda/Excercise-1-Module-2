@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Purwadhika</title>
+	</head>
+	<body>
+		<form id="signup">
+			<div>
+				<label for="nama"> Username </label>
+				<input type="text" name="username" id="nama" />
+			</div>
+			
+			<div>
+				<input type="radio" name="lenguage" id="language" value="javascript"/>
+				<label for="javascript"> Javascript </label>
+				
+				<input type="radio" name="lenguage" id="language" value="html"/>
+				<label for="html"> HTML </label>
+			</div>
+			
+			<div>
+				<button type="submit" onclick="register()">
+					Submit
+				</button>
+			</div>
+			
+		</form>
+
+		<script>
+			const register = () => {
+				const input = document.getElementById("signup");
+				const nama = input.elements.username.value;
+				const fav = document.querySelector("input[name=language]:checked").value;
+				console.log(nama);
+				console.log(fav);
+				alert(`Hello ${nama} Your favorite language if ${fav}`);
+			}
+
+		</script>
+	</body>
+</html>

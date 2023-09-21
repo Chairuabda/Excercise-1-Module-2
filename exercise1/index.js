@@ -1,0 +1,3 @@
+const notif = () => {
+    alert("Hai")
+}

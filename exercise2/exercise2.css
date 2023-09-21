@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #00ADB5;
+}
+
+.table tr, th, td{
+    border: 1px solid black;
+}
+
+.img img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.name {
+    padding: 5px;
+}
+
+.food {
+    padding: 5px;
+}
+
+.group {
+    padding: 5px;
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.allBtn {
+    width: 60%;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.backBtn {
+    width: fit-content;
+}
+
+.backBtn a{
+    /* margin: 5px; */
+    padding: 8px 30px;
+    border-radius: 6px;
+    border: 1px solid #393E46;
+    cursor: pointer;
+    text-decoration: none;
+    color: #393E46;
+}
+
+.backBtn a:hover {
+    background-color: #393E46;
+    color: #EEEEEE;
+    border: #EEEEEE;
+}
+
+.backBtn a:active {
+    background-color: #00ADB5;
+}
